@@ -13,9 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SearchBarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,6 +25,7 @@ import { AppComponent } from './app.component';
     MatFormFieldModule,
     MatSelectModule,
     MatTabsModule,
+    FormsModule,
     GaugeModule.forRoot(),
   ],
   providers: [],
